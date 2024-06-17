@@ -126,7 +126,7 @@ x = 10 <= 5;
 x = 10 >= 5;
 
 console.log(x);
-*/
+
 
 // type coercion
 
@@ -148,3 +148,17 @@ x = 5 + false;
 x = 5 + undefined;
 
 console.log(x, typeof x);
+*/
+
+// workings with strings
+let x;
+const name = "tharly";
+const age = "29";
+
+x = "hello, may name is " + name + "and I am " + age + " years old ";
+
+// template literals
+
+x = `hello my name is ${name} and i am ${age} years old`;
+
+console.log(x);
