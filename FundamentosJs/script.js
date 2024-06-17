@@ -148,7 +148,7 @@ x = 5 + false;
 x = 5 + undefined;
 
 console.log(x, typeof x);
-*/
+
 
 // workings with strings
 let x;
@@ -193,3 +193,21 @@ x = s.includes("hello");
 
 x = s.split("");
 console.log(x);
+*/
+
+// desafio
+
+const myString = "develope";
+
+let myNewString;
+// 1
+
+myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
+
+// 2
+myNewString = myString[0].toUpperCase() + myString.substring(1);
+
+// 3
+myNewString = `${myString[0].toUpperCase()}${myString.substring(1)}`;
+
+console.log(myNewString);
