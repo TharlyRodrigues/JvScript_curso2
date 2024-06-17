@@ -186,4 +186,10 @@ x = x.trim();
 // substituir uma string
 x = s.replace("world", "john");
 
+// verificar se uma string e true ou false
+x = s.includes("hello");
+
+// dividir em caracteres
+
+x = s.split("");
 console.log(x);
