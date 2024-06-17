@@ -161,4 +161,29 @@ x = "hello, may name is " + name + "and I am " + age + " years old ";
 
 x = `hello my name is ${name} and i am ${age} years old`;
 
+// strings properties and methods
+
+const s = new String("hello world");
+x = typeof s;
+
+// monstra a quantidade de caracteres
+x = s.length;
+// acessando value e key
+
+x = s[0];
+x = s.__proto__;
+x = s.toUpperCase();
+x = s.toLowerCase();
+x = s.charAt(0);
+x = s.indexOf("d");
+x = s.substring(4);
+
+x = s.slice(0, 5);
+
+x = "       hello world";
+x = x.trim();
+
+// substituir uma string
+x = s.replace("world", "john");
+
 console.log(x);
