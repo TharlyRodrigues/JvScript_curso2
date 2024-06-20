@@ -211,7 +211,7 @@ myNewString = myString[0].toUpperCase() + myString.substring(1);
 myNewString = `${myString[0].toUpperCase()}${myString.substring(1)}`;
 
 console.log(myNewString);
-*/
+
 
 const arr = [1, 2, 3, 4, 5];
 
@@ -235,3 +235,43 @@ arr4.splice(4, 1);
 arr4.push(11);
 arr4.reverse();
 console.log(arr4);
+*/
+let x;
+const person = {
+  name: "tharly rodrigues",
+  age: 30,
+  isAdmin: true,
+  address: {
+    street: "rua jose Bonifácio, 1044",
+    city: "Altos",
+    state: "PI",
+  },
+  hobbies: ["musica", "esporte"],
+};
+
+x = person.name;
+x = person["age"];
+x = person.address.street;
+x = person.hobbies[0];
+
+// alterar propriedades do objeto
+person.name = "thiago rodrigues";
+person["isAdmin"] = false;
+
+delete person.age;
+
+person.hasChildren = true;
+
+person.greet = function () {
+  console.log(`hello, my name is ${this.name}`);
+};
+
+person.greet();
+
+const person2 = {
+  "first name": "brad",
+  "last name": "Traversy",
+};
+
+x = person2["first name"];
+console.log(x);
