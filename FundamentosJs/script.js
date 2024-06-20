@@ -193,7 +193,7 @@ x = s.includes("hello");
 
 x = s.split("");
 console.log(x);
-*/
+
 
 // desafio
 
@@ -211,3 +211,4 @@ myNewString = myString[0].toUpperCase() + myString.substring(1);
 myNewString = `${myString[0].toUpperCase()}${myString.substring(1)}`;
 
 console.log(myNewString);
+*/
