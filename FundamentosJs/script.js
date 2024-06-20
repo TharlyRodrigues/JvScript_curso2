@@ -235,7 +235,7 @@ arr4.splice(4, 1);
 arr4.push(11);
 arr4.reverse();
 console.log(arr4);
-*/
+
 let x;
 const person = {
   name: "tharly rodrigues",
@@ -275,3 +275,4 @@ const person2 = {
 
 x = person2["first name"];
 console.log(x);
+*/
