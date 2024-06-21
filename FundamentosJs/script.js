@@ -275,7 +275,7 @@ const person2 = {
 
 x = person2["first name"];
 console.log(x);
-*/
+
 
 // trabalhando com números
 
@@ -299,4 +299,30 @@ x = num.valueOf();
 x = Number.MAX_VALUE;
 
 x = Number.MIN_VALUE;
+
+console.log(x);
+*/
+
+let x;
+
+x = Math.sqrt(9);
+
+x = Math.abs(-5);
+
+x = Math.round(4.2);
+
+x = Math.ceil(4.2);
+
+x = Math.floor(4.9);
+
+x = Math.pow(2, 3);
+
+x = Math.max(4, 5, 6);
+
+x = Math.min(4, 5, 3);
+
+x = Math.random();
+
+x = Math.floor(Math.random() * 10 + 1);
+
 console.log(x);
