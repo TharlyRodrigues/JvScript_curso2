@@ -301,7 +301,7 @@ x = Number.MAX_VALUE;
 x = Number.MIN_VALUE;
 
 console.log(x);
-*/
+
 
 let x;
 
@@ -326,3 +326,15 @@ x = Math.random();
 x = Math.floor(Math.random() * 10 + 1);
 
 console.log(x);
+
+
+// desafio 2
+
+const x = Math.floor(Math.random() * 100 + 1);
+const y = Math.floor(Math.random() * 50 + 1);
+const sum = x + y;
+const outSum = `${x} + ${y} =  ${sum}`;
+
+console.log(outSum);
+console.log(x, y);
+*/
