@@ -337,4 +337,27 @@ const outSum = `${x} + ${y} =  ${sum}`;
 
 console.log(outSum);
 console.log(x, y);
+
+
+let d;
+
+d = new Date();
+
+d = d.toString();
+
+d = new Date(2021, 0, 12, 12, 30, 0);
+d = new Date("2021-07-12T12:30:00");
+d = new Date("2021/07/12 12:30:00");
+d = new Date("2021/07/12 12:30:00");
+
+d = Date.now();
+
+d = new Date();
+d = d.getTime();
+d = d.valueOf();
+
+d = new Date(16669962049745);
+
+d = Math.floor(Date.now() / 1000);
+d = console.log(d);
 */
