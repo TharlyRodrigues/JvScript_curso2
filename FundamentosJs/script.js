@@ -360,4 +360,35 @@ d = new Date(16669962049745);
 
 d = Math.floor(Date.now() / 1000);
 d = console.log(d);
+
+
+let x;
+
+let d = new Date();
+
+x = d.toString();
+x = d.getTime();
+x = d.valueOf();
+
+x = d.getFullYear();
+
+x = d.getMonth();
+
+x = d.getMonth() + 1;
+
+x = d.getDate();
+
+x = d.getDay();
+
+x = d.getHours();
+x = d.getMinutes();
+x = d.getSeconds();
+x = d.getMilliseconds();
+
+x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+
+// api para chama a date
+x = Intl.DateTimeFormat("pt-BR").format(d);
+
+console.log(x);
 */
