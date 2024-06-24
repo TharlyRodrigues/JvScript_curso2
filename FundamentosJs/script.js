@@ -392,3 +392,31 @@ x = Intl.DateTimeFormat("pt-BR").format(d);
 
 console.log(x);
 */
+
+// array literal
+const Numbers = [12, 45, 33, 29, 39, 102];
+
+const midex = [12, "hello", true, null];
+
+// array constructor
+const fruits = new Array("apple", "grape", "orange");
+
+x = Numbers[0];
+x = Numbers[0] + Numbers[3];
+
+x = `my favorite fruit is an ${fruits[2]}`;
+
+// mostra a quantidade de itens do array
+x = Numbers.length;
+
+fruits[2] = "pear";
+
+// fruits.length = 2;
+
+fruits[3] = "strawberry";
+
+fruits[fruits.length] = "blueberry";
+fruits[fruits.length] = "peach";
+
+x = fruits;
+console.log(x);
