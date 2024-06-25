@@ -442,7 +442,7 @@ x = arr.slice(1, 4);
 x = arr.splice(1, 4).reverse().toString().charAt(0);
 
 console.log(x);
-*/
+
 
 let x;
 
@@ -479,3 +479,35 @@ const c = 3;
 x = Array.of(a, b, c);
 
 console.log(x);
+*/
+
+// desafio com array
+let x;
+const arr = [1, 2, 3, 4, 5, 6];
+
+arr.unshift(0);
+arr.reverse();
+
+// x = arr.toString();
+
+console.log(arr);
+
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
+
+// const arr3 = arr1.slice(0, 4).concat(arr2);
+// console.log(arr3);
+
+//  desafio 4
+// Saída: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
+
+// Concatena as duas arrays e cria um Set para garantir valores únicos, depois converte de volta para array
+// const arr3 = [...new Set(arr1.concat(arr2))];
+
+const arr3 = [...new Set(arr1.concat(arr2))];
+
+const arr4 = [...arr1, ...arr2];
+arr4.splice(4, 1);
+console.log(arr4);
