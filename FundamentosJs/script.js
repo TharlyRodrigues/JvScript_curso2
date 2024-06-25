@@ -479,7 +479,7 @@ const c = 3;
 x = Array.of(a, b, c);
 
 console.log(x);
-*/
+
 
 // desafio com array
 let x;
@@ -511,3 +511,35 @@ const arr3 = [...new Set(arr1.concat(arr2))];
 const arr4 = [...arr1, ...arr2];
 arr4.splice(4, 1);
 console.log(arr4);
+
+*/
+let x;
+
+const person = {
+  name: "tharly rodrigues",
+  age: 29,
+  isAdmin: true,
+  address: {
+    street: "rua jose bonifacio 1044",
+    city: "são paulo",
+    state: "SP",
+  },
+  hobbies: ["music", "sports"],
+};
+
+x = person.name;
+x = person["age"];
+x = person.address.state;
+x = person.hobbies[0];
+
+person.name = "thiago rodrigues";
+
+person["isAdmin"] = false;
+
+delete person.age;
+
+person.hasChildren = true;
+
+x = person;
+
+console.log(x);
