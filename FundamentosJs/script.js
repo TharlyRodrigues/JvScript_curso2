@@ -626,7 +626,7 @@ const Numbers = [33, 67, 33, 49];
 const [first, second, ...rest] = Numbers;
 
 console.log(first, second, rest);
-*/
+
 
 const post = {
   id: 1,
@@ -658,3 +658,52 @@ const posts = [
 
 const str2 = JSON.stringify(posts);
 console.log(str2);
+*/
+
+// desafio 3
+
+const library = [
+  {
+    id: "1",
+    title: "the road ahead",
+    author: "bill gates",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    id: "2",
+    title: "steve jobs",
+    author: "walter isaacson",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    id: "3",
+    title: "mockingjay",
+    author: "suzanne collins",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+];
+
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+// console.log(library);
+
+const { title: firstBook } = library[0];
+
+console.log(firstBook);
+
+const libraryJson = JSON.stringify(library);
+console.log(libraryJson);
