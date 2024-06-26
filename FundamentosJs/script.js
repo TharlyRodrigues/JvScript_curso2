@@ -627,3 +627,34 @@ const [first, second, ...rest] = Numbers;
 
 console.log(first, second, rest);
 */
+
+const post = {
+  id: 1,
+  title: "post one",
+  body: "this is the boy",
+};
+
+// convert to json string
+
+const str = JSON.stringify(post);
+
+// parse json
+
+const obj = JSON.parse(str);
+
+const posts = [
+  {
+    id: 1,
+    title: "post one",
+    body: "this is the boy",
+  },
+
+  {
+    id: 2,
+    title: "post two",
+    body: "this is the boy",
+  },
+];
+
+const str2 = JSON.stringify(posts);
+console.log(str2);
