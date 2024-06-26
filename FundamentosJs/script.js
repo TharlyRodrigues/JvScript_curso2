@@ -593,4 +593,37 @@ x = Object.entries(todo);
 x = todo.hasOwnProperty("age");
 
 console.log(x);
+
+
+const firstName = "john";
+const lastName = "Doe";
+const age = "30";
+
+const person = {
+  firstName,
+  lastName,
+  age,
+};
+
+console.log(person.age);
+
+// destructuring
+
+const todo = {
+  id: 1,
+  title: "Take out trash",
+  user: {
+    name: "Tharly",
+  },
+};
+
+const { id: todoId, title, user } = todo;
+console.log(todoId);
+
+// destructure array
+
+const Numbers = [33, 67, 33, 49];
+const [first, second, ...rest] = Numbers;
+
+console.log(first, second, rest);
 */
