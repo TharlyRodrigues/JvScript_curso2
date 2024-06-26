@@ -542,4 +542,7 @@ person.hasChildren = true;
 
 x = person;
 
+person.greet = function () {
+  console.log(`hello, my name is ${this.name}`);
+};
 console.log(x);
