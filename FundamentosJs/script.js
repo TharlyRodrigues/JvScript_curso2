@@ -658,7 +658,7 @@ const posts = [
 
 const str2 = JSON.stringify(posts);
 console.log(str2);
-*/
+
 
 // desafio 3
 
@@ -707,3 +707,31 @@ console.log(firstBook);
 
 const libraryJson = JSON.stringify(library);
 console.log(libraryJson);
+*/
+
+function sayHello() {
+  console.log("hello world");
+}
+
+sayHello();
+
+function sumNumbers(num1, num2) {
+  console.log(num1 + num2);
+}
+
+sumNumbers(5, 10);
+
+function subtract(num1, num2) {
+  return num1 - num2;
+
+  console.log("after the return");
+}
+
+const result = subtract(10, 2);
+console.log(result, subtract(15, 8));
+
+function registerUser(user) {
+  return user + "is registered";
+}
+
+console.log(registerUser("tharly Rodrigues"));
