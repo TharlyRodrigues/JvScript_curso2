@@ -849,7 +849,7 @@ function run() {
 
 run();
 // console.log(d);
-*/
+
 
 // Declaração vs Expressão
 
@@ -863,3 +863,43 @@ const addPlusSing = function (value) {
 };
 
 console.log(addPlusSing(200));
+
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// const add = (a, b) => {
+//   return a + b;
+// };
+
+const add = (a, b) => a + b;
+
+console.log(add(2, 5));
+
+const double = (a) => a * 50;
+console.log(double(10));
+
+// para da return em um object
+const creatObj = () => ({
+  name: "tharly",
+});
+
+console.log(creatObj());
+
+// para funcionar em array
+
+const numbers = [1, 2, 3, 4];
+
+numbers.forEach(function (n) {
+  console.log(n);
+});
+
+// numbers.forEach(n) => console.log(n);
+numbers.forEach((n) => console.log(n));
+
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+*/
