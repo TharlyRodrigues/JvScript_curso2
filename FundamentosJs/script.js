@@ -850,3 +850,16 @@ function run() {
 run();
 // console.log(d);
 */
+
+// Declaração vs Expressão
+
+function addDollarsing(value) {
+  return "$" + value;
+}
+console.log(addDollarsing(100));
+
+const addPlusSing = function (value) {
+  return "+" + value;
+};
+
+console.log(addPlusSing(200));
