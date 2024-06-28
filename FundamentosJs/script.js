@@ -902,4 +902,78 @@ numbers.forEach((n) => console.log(n));
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
+
+// Expressões de função imediatamente invocadas iife
+
+(function () {
+  const user = "thiago";
+  console.log(user);
+  const hello = () => console.log("hello from the IIfe");
+  hello();
+})();
+
+(function (name) {
+  console.log("hello " + name);
+})("tharly");
+
+(function () {
+  const user = "rodrigues";
+  console.log(user);
+
+})();
+
+
+// Desafios funcionais
+
+// function getCelsius(F) {
+//   const celsius = ((F - 32) * 5) / 9;
+
+//   if (celsius <= 0) {
+//     console.log("ha temperatura esta baixa");
+//   } else {
+//     console.log("ha temperatura esta alta");
+//   }
+//   return celsius;
+// }
+
+// console.log(getCelsius(50));
+
+const getCelsius = (F) => {
+  const celsius = ((F - 32) * 5) / 9;
+
+  if (celsius <= 0) {
+    console.log("ha temperatura esta baixa");
+  } else {
+    console.log("ha temperatura esta alta");
+  }
+  return celsius;
+};
+console.log(getCelsius(50));
+
+// desafio 2
+// function minMax(...numbers) {
+//   return numbers.join(", ");
+// }
+
+// console.log(minMax(...[1, 2, 3, 4, 5, 6]));
+
+function minMax(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  return {
+    min,
+    max,
+  };
+}
+
+console.log(minMax([1, 2, 3, 4, 5, 6]));
+
+// desafio 3 IFI
+
+((length, width) => {
+  const area = length * width;
+  const outPut = `the area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`;
+  console.log(outPut);
+})(10, 5);
+
 */
