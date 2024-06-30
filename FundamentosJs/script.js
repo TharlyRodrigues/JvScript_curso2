@@ -849,6 +849,7 @@ function run() {
 
 run();
 // console.log(d);
+// Escopo aninhado
 
 
 // Declaração vs Expressão
