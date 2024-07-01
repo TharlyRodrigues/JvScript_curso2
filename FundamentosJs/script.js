@@ -977,7 +977,7 @@ console.log(minMax([1, 2, 3, 4, 5, 6]));
   console.log(outPut);
 })(10, 5);
 
-*/
+
 
 // entendo funções
 const x = 100;
@@ -991,3 +991,4 @@ function getSum(n1, n2) {
 const sum1 = getSum(x, y);
 const sum2 = getSum(10, 5);
 console.log(sum1, sum2);
+*/
