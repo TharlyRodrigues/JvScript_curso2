@@ -992,3 +992,38 @@ const sum1 = getSum(x, y);
 const sum2 = getSum(10, 5);
 console.log(sum1, sum2);
 */
+
+if (true) {
+  console.log("thi is true");
+}
+
+if (false) {
+  console.log("this is NOT true");
+}
+
+const x = 10;
+const y = 5;
+if (x > y) {
+  console.log(`${x} is greater than ${y}`);
+}
+if (x >= y) {
+  console.log(`${x} is greater than or equal to ${y}`);
+}
+
+if (x === y) {
+  console.log(`${x} is equal to ${y}`);
+} else {
+  console.log(`${x} is NOT equal to ${y}`);
+}
+
+if (x !== y) {
+  const z = 20;
+  console.log(`${z} is 20`);
+}
+
+// shorthand if
+
+if (x >= y) {
+  console.log(`${x} is greater than or equal to ${y}`);
+  console.log("this is treu");
+} else console.log("this is NOT false");
