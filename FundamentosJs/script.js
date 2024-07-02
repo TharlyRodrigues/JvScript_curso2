@@ -991,7 +991,7 @@ function getSum(n1, n2) {
 const sum1 = getSum(x, y);
 const sum2 = getSum(10, 5);
 console.log(sum1, sum2);
-*/
+
 
 if (true) {
   console.log("thi is true");
@@ -1027,3 +1027,66 @@ if (x >= y) {
   console.log(`${x} is greater than or equal to ${y}`);
   console.log("this is treu");
 } else console.log("this is NOT false");
+
+
+const d = new Date(10, 30, 2022, 9, 0, 0);
+const hrs = d.getHours();
+
+if (hrs) {
+  console.log("good morning");
+} else if (hrs < 18) {
+  console.log("good afternoon");
+} else console.log("good Night");
+
+// nested if
+
+if (hrs < 12) {
+  console.log("good morning");
+
+  if (hrs === 6) {
+    console.log("wake up");
+  }
+} else if (hrs < 18) {
+  console.log("good afternoon");
+} else {
+  console.log("good Night");
+  if (hrs >= 20) {
+    console.log("zzzz");
+  }
+}
+
+if (hrs >= 7 && hrs < 15) {
+  console.log("It is work time ");
+}
+
+if (hrs === 6 || hrs === 20) {
+  console.log("brush your time ");
+}
+*/
+const d = new Date(2022, 1, 10, 8, 0, 0);
+const month = d.getMonth();
+const hrs = d.getHours;
+
+switch (month) {
+  case 1:
+    console.log("Jar");
+    break;
+  case 2:
+    console.log("Fer");
+    break;
+  case 3:
+    console.log("Mar");
+  default:
+    console.log("não é Jar,Fer,Mar");
+}
+
+switch (true) {
+  case hrs < 12:
+    console.log("bom dia");
+    break;
+  case hrs < 18:
+    console.log("boa tarde");
+    break;
+  default:
+    console.log("boa noite");
+}
