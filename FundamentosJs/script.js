@@ -1062,7 +1062,7 @@ if (hrs >= 7 && hrs < 15) {
 if (hrs === 6 || hrs === 20) {
   console.log("brush your time ");
 }
-*/
+
 const d = new Date(2022, 1, 10, 8, 0, 0);
 const month = d.getMonth();
 const hrs = d.getHours;
@@ -1090,3 +1090,29 @@ switch (true) {
   default:
     console.log("boa noite");
 }
+
+
+function calculator(num1, num2, operator) {
+  let result;
+  switch (operator) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    default:
+      result = "Invalid Operator";
+  }
+  console.log(result);
+  return result;
+}
+
+calculator(200, 10, "+");
+*/
