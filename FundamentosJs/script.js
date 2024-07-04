@@ -1238,6 +1238,39 @@ if (c === null || c === undefined) {
 c = c ?? 20;
 c ??= 20;
 console.log(c);
-*/
+
 
 // exercício de fixação
+
+const age = 20;
+
+if (age >= 18) {
+  console.log("voce e maior de idade");
+} else {
+  console.log("voce nao é de maior ");
+}
+
+// formula 02
+
+age >= 18 ? console.log("maior") : console.log("menor");
+
+//  exe2
+
+const canVote = age >= 18 ? true : false;
+const canVote2 = age >= 18 ? "maior" : "menor";
+console.log(canVote);
+console.log(canVote2);
+
+// exe3
+const auth = true;
+
+// const redirect = auth
+//   ? (alert("seja bem vindo ao dashboard"), "/dashboard")
+//   : (alert("access Denied"), "login");
+
+// console.log(redirect);
+
+// exe4
+
+auth && console.log("seja bem vindo ao dashboard");
+*/
