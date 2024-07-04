@@ -1115,4 +1115,92 @@ function calculator(num1, num2, operator) {
 }
 
 calculator(200, 10, "+");
+
+
+// const email = "teste@test.com";
+// if (email) {
+//   console.log("You passed in an email");
+// }
+
+const x = null;
+
+if (x) {
+  console.log("this is truthy");
+} else {
+  console.log("this is falsy");
+}
+console.log(Boolean(x));
+
+
 */
+// truthy and false caveats
+
+const children = 3;
+
+if (!isNaN(children)) {
+  console.log(`you have ${children} children`);
+} else {
+  console.log("please enter number of children");
+}
+
+// checagem de array
+
+const post = ["post one"];
+
+if (post.length > 0) {
+  console.log("list post");
+} else {
+  console.log("Not post");
+}
+
+// checagem de objetos
+
+const user = {
+  name: "tharly",
+  age: 29,
+};
+
+if (Object.keys(user).length > 0) {
+  console.log("list user");
+} else {
+  console.log("not user");
+}
+
+// operadores
+console.log(10 < 20 && 30 > 15 && 40 > 30); // todos tem q ser vdd
+console.log(10 > 20 || 30 > 15); // apenas um vdd
+
+// exemplos &&
+
+let a;
+
+a = 10 && 20;
+a = 10 && 20 && 30;
+a = 10 && 0 && 30;
+a = 10 && " " && 0 && 20;
+
+console.log(a);
+
+const post1 = [];
+post1.length > 0 && console.log(post1[0]);
+
+// exemplos de ||
+
+let b;
+
+b = 10 || 20;
+b = 0 || 20;
+b = 0 || null || "" || undefined;
+
+console.log(b);
+
+// exemplos ? - returns
+
+let c;
+
+c = 10 ?? 20;
+c = null ?? 20;
+c = undefined ?? 30;
+c = 0 ?? 30;
+c = "" ?? 30;
+console.log(c);
