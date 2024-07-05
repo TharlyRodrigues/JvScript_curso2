@@ -1273,4 +1273,40 @@ const auth = true;
 // exe4
 
 auth && console.log("seja bem vindo ao dashboard");
+
+
+// for loops entendendo loops
+
+// for ([initialExpression]; [conditionExpression]; [incrementExpression])
+//   statement;
+
+for (let i = 0; i <= 10; i++) {
+  if (i === 7) {
+    console.log("meu numero e 7");
+  } else {
+    console.log("number " + i);
+  }
+}
+
+// nested for loops
+
+for (let i = 0; i <= 10; i++) {
+  console.log("number " + i);
+  for (let j = 0; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+
+// loops em array
+
+const names = ["tharly", "Thiago", "tamires", "kaduu"];
+
+for (let i = 0; i < names.length; i++) {
+  if (i === 2) {
+    console.log(names[i] + " is the best");
+  } else {
+    console.log(names[i]);
+  }
+}
 */
