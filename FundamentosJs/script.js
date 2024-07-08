@@ -1449,7 +1449,7 @@ for (const key in colorArr) {
   console.log(colorArr[key]);
 }
 
-*/
+
 
 const socials = ["facebook", "instagram", "twitter", "LinkedIn"];
 
@@ -1477,3 +1477,59 @@ const socialObj = [
 ];
 
 socialObj.forEach((item) => console.log(item.url));
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const eveNumbers = numbers.filter(function (number) {
+//   return number % 2 === 0;
+// });
+
+// const eveNumbers = numbers.filter((number) => number % 2 === 0);
+
+// console.log(eveNumbers);
+
+let eveNumbers = [];
+
+numbers.forEach((number) => {
+  if (number % 2 === 0) {
+    eveNumbers.push(number);
+  }
+});
+
+console.log(eveNumbers);
+*/
+
+const companies = [
+  { name: "Company One", category: "Finance", start: 1981, end: 2004 },
+  { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+  { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+  { name: "Company Four", category: "Technology", start: 1989, end: 2010 },
+  { name: "Company Five", category: "Finance", start: 2009, end: 2014 },
+  { name: "Company Six", category: "Retail", start: 1987, end: 2010 },
+  { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+  { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: 1989 },
+];
+
+// Exemplo de como iterar sobre as empresas e imprimir informações sobre cada uma
+
+const retaiCompanies = companies.filter(
+  (company) => company.category === "Retail"
+);
+
+console.log(retaiCompanies);
+
+// anos 1980 / 20005
+
+const earlyCompanies = companies.filter(
+  (company) => (company.start >= 1980) & (company.start <= 2005)
+);
+
+console.log(earlyCompanies);
+
+const longCompanies = companies.filter(
+  (company) => (company.end = company.start >= 10)
+);
+
+console.log(longCompanies);
