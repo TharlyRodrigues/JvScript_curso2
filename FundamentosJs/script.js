@@ -1430,7 +1430,7 @@ map.set("age", "29");
 for (const [key, value] of map) {
   console.log(key, value);
 }
-*/
+
 
 const colorObj = {
   color1: "red",
@@ -1449,6 +1449,31 @@ for (const key in colorArr) {
   console.log(colorArr[key]);
 }
 
+*/
+
 const socials = ["facebook", "instagram", "twitter", "LinkedIn"];
 
-console.log(socials);
+// socials.forEach(function (items) {
+//   console.log(items);
+// });
+
+// socials.forEach((items) => {
+//   console.log(items);
+// });
+
+// socials.forEach((item, index, arr) => console.log(`${item} - ${index}`, arr));
+//
+function logSocials(socials) {
+  console.log(socials);
+}
+
+// socials.forEach(logSocials);
+
+const socialObj = [
+  { name: "twitter", url: "https://twitter.com" },
+  { name: "facebook", url: "https://facebook.com" },
+  { name: "instagram", url: "https://instagram.com" },
+  { name: "linkedIn", url: "https://linkedIn.com" },
+];
+
+socialObj.forEach((item) => console.log(item.url));
