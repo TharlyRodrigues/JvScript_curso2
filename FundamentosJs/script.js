@@ -1498,7 +1498,7 @@ numbers.forEach((number) => {
 });
 
 console.log(eveNumbers);
-*/
+
 
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
@@ -1533,3 +1533,4 @@ const longCompanies = companies.filter(
 );
 
 console.log(longCompanies);
+*/
