@@ -1411,7 +1411,7 @@ const users = [
 for (const user of users) {
   console.log(user.name);
 }
-  */
+
 
 // loops over strings
 
@@ -1430,3 +1430,25 @@ map.set("age", "29");
 for (const [key, value] of map) {
   console.log(key, value);
 }
+*/
+
+const colorObj = {
+  color1: "red",
+  color2: "blue",
+  color3: "pink",
+  color4: "green",
+};
+
+for (const key in colorObj) {
+  console.log(key, colorObj[key]);
+}
+
+const colorArr = ["red", "blue", "green"];
+
+for (const key in colorArr) {
+  console.log(colorArr[key]);
+}
+
+const socials = ["facebook", "instagram", "twitter", "LinkedIn"];
+
+console.log(socials);
