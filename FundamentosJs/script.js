@@ -1356,7 +1356,7 @@ do {
   console.log("number" + i);
   i++;
 } while (i <= 20);
-*/
+
 
 // for loop
 
@@ -1387,4 +1387,46 @@ while (j <= 100) {
     console.log(j);
   }
   j++;
+}
+
+
+const items = ["books", "table", "chair", "kite"];
+
+const users = [
+  {
+    name: "tharly",
+  },
+  { name: "tamires" },
+  { name: "thiago" },
+];
+
+// for (let i = 0; i < items.length; i++) {
+//   console.log(items[i]);
+// }
+
+// for (const item of items) {
+//   console.log(item);
+// }
+
+for (const user of users) {
+  console.log(user.name);
+}
+  */
+
+// loops over strings
+
+const str = "hello world";
+
+for (const letter of str) {
+  console.log(letter);
+}
+
+// loops map
+
+const map = new Map();
+map.set("name", "tharly ");
+map.set("age", "29");
+
+for (const [key, value] of map) {
+  console.log(key, value);
 }
