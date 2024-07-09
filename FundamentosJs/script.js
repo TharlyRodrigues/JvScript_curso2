@@ -1534,3 +1534,75 @@ const longCompanies = companies.filter(
 
 console.log(longCompanies);
 */
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const doubleNumbers = numbers.map((number) => number * 2);
+
+// console.log(doubleNumbers);
+
+const doubleNumbers2 = [];
+
+numbers.forEach((number) => {
+  doubleNumbers2.push(number * 2);
+});
+
+// console.log(doubleNumbers2);
+
+const companies = [
+  { name: "Company One", category: "Finance", start: 1981, end: 2004 },
+  { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+  { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+  { name: "Company Four", category: "Technology", start: 1989, end: 2010 },
+  { name: "Company Five", category: "Finance", start: 2009, end: 2014 },
+  { name: "Company Six", category: "Retail", start: 1987, end: 2010 },
+  { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+  { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: 1989 },
+];
+
+const companyNames = companies.map((company) => company.name);
+
+// console.log(companyNames);
+
+// const company2 = [];
+
+// companies.forEach((company) => {
+//   company2.push(company.name);
+// });
+
+// console.log(company2);
+
+// criação de uma array para o nome e categoria
+
+const companyInfo = companies.map((company) => {
+  return {
+    name: company.name,
+    category: company.category,
+  };
+});
+
+// console.log(companyInfo);
+
+// criação de um array com o anos das companias
+
+const companyYears = companies.map((company) => {
+  return {
+    name: company.name,
+    length: company.end - company.start + " years",
+  };
+});
+
+// console.log(companyYears);
+
+const squareAndDouble = numbers
+  .map((number) => Math.sqrt(number))
+  .map((sqrt) => sqrt * 2);
+
+// console.log(squareAndDouble);
+
+const numbersDouble = numbers
+  .filter((number) => number % 2 === 0)
+  .map((number) => number * 2);
+
+console.log(numbersDouble);
