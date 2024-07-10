@@ -1779,7 +1779,6 @@ const capitalizedWords = words.map(
 
 ```
 </details>
-*/
 
 // desafio 1
 
@@ -1838,3 +1837,14 @@ const sum = numbers
   .reduce((acc, numbersMais) => acc + numbersMais, 0);
 
 console.log(sum);
+
+// exercicio 03
+
+const words = ["coder", "programmer", "developer"];
+
+const capitalizedWords = words.map((word) => {
+  return word[0].toUpperCase() + word.slice(1, word.length);
+});
+
+console.log(capitalizedWords);
+*/
