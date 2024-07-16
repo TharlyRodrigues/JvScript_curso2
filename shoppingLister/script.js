@@ -166,3 +166,42 @@ removeItem4(4);
 */
 
 // trabalhando com styles e classes
+
+// trabalhando com Eventos
+
+const clearBtn = document.querySelector("#clear");
+
+function onClear() {
+  const itemList = document.querySelector("ul");
+  const items = itemList.querySelectorAll("li");
+
+  // itemList.innerHTML = " ";
+
+  // items.forEach((items) => itemList.remove());
+
+  while (itemList.firstChild) {
+    itemList.removeChild(itemList.firstChild);
+  }
+}
+
+// events listener
+
+// clearBtn.onclick = function () {
+//   alert("Clear items ");
+// };
+
+// addEventListener()
+
+// clearBtn.addEventListener("click", function () {
+//   alert("clear item");
+// });
+
+// clearBtn.addEventListener("click", () => alert("Clear items "));
+
+clearBtn.addEventListener("click", onClear);
+
+// setTimeout(() => clearBtn.removeEventListener("click", onclick), 5000);
+
+// setTimeout(() => clearBtn.click(), 5000);
+
+setTimeout(() => clearBtn.click(), 5000);
