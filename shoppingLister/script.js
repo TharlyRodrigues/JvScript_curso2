@@ -165,6 +165,8 @@ const removeItem4 = (itemNumber) =>
 removeItem4(4);
 */
 
+/*
+
 // trabalhando com styles e classes
 
 // trabalhando com Eventos
@@ -205,3 +207,70 @@ clearBtn.addEventListener("click", onClear);
 // setTimeout(() => clearBtn.click(), 5000);
 
 setTimeout(() => clearBtn.click(), 5000);
+*/
+
+// const logo = document.querySelector("img");
+
+// const onClick = () => console.log("click event");
+
+// const onDoubleClick = () => console.log("Double click event");
+
+// // event Listeners
+
+// logo.addEventListener("click", onClick);
+// logo.addEventListener("dblClick", onDoubleClick);
+/*
+const logo = document.querySelector("img");
+
+const onClick = () => console.log("click on");
+
+const onDubleClick = () => {
+  if (document.body.style.backgroundColor !== "purple") {
+    document.body.style.backgroundColor = "purple";
+    document.body.style.color = "white";
+  } else {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+  }
+};
+const onRightClick = () => console.log("click right ");
+
+const mouseDownClick = () => console.log("mousedown right ");
+
+const mouseUpClick = () => console.log("mouseup");
+
+const onMouseWheel = () => console.log("wheel");
+const onMouseOut = () => console.log("mouseOut");
+const onMouseOver = () => console.log("mouseOver");
+const dragonStart = () => console.log("dragon Start");
+const dragClick = () => console.log("drag event");
+const dragEndClick = () => console.log("drag End");
+
+logo.addEventListener("click", onClick);
+
+logo.addEventListener("dblclick", onDubleClick);
+
+// cria um menu
+logo.addEventListener("contextmenu", onRightClick);
+
+// Arraste do mouse
+
+logo.addEventListener("mousedown", mouseDownClick);
+
+logo.addEventListener("mouseup", mouseUpClick);
+
+logo.addEventListener("mouseup", mouseUpClick);
+
+// rolagem mouse
+logo.addEventListener("wheel", onMouseWheel);
+
+logo.addEventListener("mouseout", onMouseOut);
+
+logo.addEventListener("wheel", onMouseOver);
+
+// rastreamento mouse
+
+logo.addEventListener("dragstart", dragonStart);
+logo.addEventListener("drag", dragClick);
+logo.addEventListener("dragend", dragEndClick);
+*/
