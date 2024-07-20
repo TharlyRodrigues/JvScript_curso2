@@ -164,9 +164,7 @@ const removeItem4 = (itemNumber) =>
 // removeItem3(1);
 removeItem4(4);
 */
-
 /*
-
 // trabalhando com styles e classes
 
 // trabalhando com Eventos
@@ -185,7 +183,9 @@ function onClear() {
     itemList.removeChild(itemList.firstChild);
   }
 }
+*/
 
+/*
 // events listener
 
 // clearBtn.onclick = function () {
@@ -207,7 +207,6 @@ clearBtn.addEventListener("click", onClear);
 // setTimeout(() => clearBtn.click(), 5000);
 
 setTimeout(() => clearBtn.click(), 5000);
-*/
 
 // const logo = document.querySelector("img");
 
@@ -219,8 +218,8 @@ setTimeout(() => clearBtn.click(), 5000);
 
 // logo.addEventListener("click", onClick);
 // logo.addEventListener("dblClick", onDoubleClick);
-/*
-const logo = document.querySelector("img");
+
+// const logo = document.querySelector("img");
 
 const onClick = () => console.log("click on");
 
@@ -273,4 +272,84 @@ logo.addEventListener("wheel", onMouseOver);
 logo.addEventListener("dragstart", dragonStart);
 logo.addEventListener("drag", dragClick);
 logo.addEventListener("dragend", dragEndClick);
+
+// const logo = document.querySelector("img");
+
 */
+// eventos
+
+/*
+Propriedades de Coordenadas
+e.clientX: Coordenada X do mouse em relação à área visível da janela (viewport).
+e.clientY: Coordenada Y do mouse em relação à área visível da janela (viewport).
+e.pageX: Coordenada X do mouse em relação ao documento, incluindo a rolagem.
+e.pageY: Coordenada Y do mouse em relação ao documento, incluindo a rolagem.
+e.screenX: Coordenada X do mouse em relação à tela inteira (monitor).
+e.screenY: Coordenada Y do mouse em relação à tela inteira (monitor).
+e.offsetX: Coordenada X do mouse em relação ao alvo do evento.
+e.offsetY: Coordenada Y do mouse em relação ao alvo do evento.
+e.movementX: Mudança de posição X do mouse desde o último evento de mousemove.
+e.movementY: Mudança de posição Y do mouse desde o último evento de mousemove.
+
+
+Propriedades de Botões
+
+e.buttons: Informação sobre quais botões do mouse estão pressionados.
+Propriedades de Teclas Modificadoras
+e.altKey: Indicador se a tecla Alt está pressionada.
+e.ctrlKey: Indicador se a tecla Ctrl está pressionada.
+e.shiftKey: Indicador se a tecla Shift está pressionada.
+e.metaKey: Indicador se a tecla Meta (tecla Windows ou Command) está pressionada.
+
+
+Propriedades de Evento de Mouse
+
+e.target: O elemento que disparou o evento.
+e.currentTarget: O elemento ao qual o evento foi adicionado.
+e.type: O tipo de evento (por exemplo, "click", "mousemove", etc.).
+e.timeStamp: O tempo em milissegundos desde que a página foi carregada até o momento em que o evento foi criado.
+
+
+Propriedades de Contexto
+e.relatedTarget: O elemento relacionado ao evento, usado principalmente em eventos de mouseover e mouseout.
+e.x: Sinônimo para clientX.
+e.y: Sinônimo para clientY.
+
+Propriedades de Deslocamento (apenas leitura)
+
+e.layerX: Coordenada X do mouse em relação à camada do alvo do evento.
+e.layerY: Coordenada Y do mouse em relação à camada do alvo do evento.
+
+*/
+const logo = document.querySelector("img");
+
+// olhas os elementos
+function onClick(e) {
+  // console.log(e.target);
+  // console.log(e.currentTarget);
+  // e.target.style.backgroundColor = "black";
+  // console.log(e.type);
+  // x e y mouse nas areas da tela
+
+  // console.log(e.clientY);
+  // console.log(e.clientX);
+
+  console.log(e.offsetY);
+  console.log(e.offsetX);
+}
+
+function onDrag(e) {
+  document.querySelector("h1").textContent = `x${e.clientX} Y ${e.clientY}`;
+}
+
+logo.addEventListener("click", onClick);
+
+logo.addEventListener("drag", onDrag);
+
+// evento de link
+
+document.querySelector("a").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  console.log("link para clica");
+});
