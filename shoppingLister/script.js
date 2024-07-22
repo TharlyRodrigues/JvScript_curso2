@@ -321,6 +321,7 @@ e.layerX: Coordenada X do mouse em relação à camada do alvo do evento.
 e.layerY: Coordenada Y do mouse em relação à camada do alvo do evento.
 
 */
+/*
 const logo = document.querySelector("img");
 
 // olhas os elementos
@@ -353,3 +354,41 @@ document.querySelector("a").addEventListener("click", function (e) {
 
   console.log("link para clica");
 });
+*/
+
+const itemInput = document.getElementById("item-input");
+
+const onKeyPress = (e) => {
+  console.log("keypress");
+};
+
+const onKeyUp = (e) => {
+  console.log("keyup");
+};
+
+const onKeyDown = (e) => {
+  // key
+  // if (e.key === "Enter") {
+  //   alert("you pressed enter");
+  // }
+  // keycode
+
+  if (e.keyCode === 13) {
+    alert("you pressed enter");
+  }
+  // code
+  if (e.code === "Numpad1") {
+    console.log("you pressed 1");
+  }
+
+  if (e.repeat) {
+    console.log("you are holding " + e.key);
+  }
+  console.log("shift:" + e.shiftKey);
+};
+
+// itemInput.addEventListener("keypress", onKeyPress);
+
+// itemInput.addEventListener("keyup", onKeyUp
+
+itemInput.addEventListener("keydown", onKeyDown);
