@@ -394,6 +394,8 @@ const onKeyDown = (e) => {
 itemInput.addEventListener("keydown", onKeyDown);
 */
 /*
+
+
 const itemInput = document.getElementById("item-input");
 const priorityInput = document.getElementById("priority-input");
 const checkBox = document.getElementById("checkbox");
@@ -461,3 +463,40 @@ function oonSubmit2(e) {
 
 form.addEventListener("submit", oonSubmit2);
 */
+
+/*
+const button = document.querySelector("form button");
+const div = document.querySelector("form div:nth-child(2)");
+
+const form = document.querySelector("form");
+
+button.addEventListener("click", () => {
+  alert("button was clicked");
+  e.stopPropagation();
+});
+
+div.addEventListener("click", () => {
+  alert("Div was clicked");
+});
+
+form.addEventListener("click", () => {
+  alert("Form was clicked");
+});
+*/
+
+// Delegação de eventos e múltiplos elementos
+
+const listItem = document.querySelectorAll("li");
+const list = document.querySelector("ul");
+
+list.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+});
+
+// listItem.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.target.remove();
+//   });
+// });
