@@ -393,7 +393,7 @@ const onKeyDown = (e) => {
 
 itemInput.addEventListener("keydown", onKeyDown);
 */
-
+/*
 const itemInput = document.getElementById("item-input");
 const priorityInput = document.getElementById("priority-input");
 const checkBox = document.getElementById("checkbox");
@@ -424,3 +424,40 @@ priorityInput.addEventListener("change", onInput);
 checkBox.addEventListener("input", onChecked);
 itemInput.addEventListener("focus", onFocus);
 itemInput.addEventListener("blur", onBlur);
+*/
+/*
+const form = document.getElementById("item-form");
+
+function onSubmit(e) {
+  e.preventDefault();
+
+  const item = document.getElementById("item-input").value;
+  const priority = document.getElementById("priority-input").value;
+  console.log(item, priority);
+
+  if (item === "" || priority === "0") {
+    alert("please fill in all fields");
+    return;
+  }
+}
+
+function oonSubmit2(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  const entries = formData.entries();
+  // console.log(entries);
+
+  for (let entry of entries) {
+    console.log(entry[1]);
+  }
+
+  // const item = formData.get("item");
+  // const priority = formData.get("priority");
+
+  // console.log(item, priority);
+}
+
+form.addEventListener("submit", oonSubmit2);
+*/
