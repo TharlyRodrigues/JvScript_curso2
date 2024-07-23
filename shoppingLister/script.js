@@ -355,7 +355,7 @@ document.querySelector("a").addEventListener("click", function (e) {
   console.log("link para clica");
 });
 */
-
+/*
 const itemInput = document.getElementById("item-input");
 
 const onKeyPress = (e) => {
@@ -392,3 +392,35 @@ const onKeyDown = (e) => {
 // itemInput.addEventListener("keyup", onKeyUp
 
 itemInput.addEventListener("keydown", onKeyDown);
+*/
+
+const itemInput = document.getElementById("item-input");
+const priorityInput = document.getElementById("priority-input");
+const checkBox = document.getElementById("checkbox");
+const heading = document.querySelector("h1");
+
+function onInput(e) {
+  heading.textContent = e.target.value;
+}
+
+function onChecked(e) {
+  const isChecked = e.target.checked;
+  heading.textContent = isChecked ? "Checked" : "not Checked";
+}
+
+function onFocus() {
+  console.log("input is focused");
+  itemInput.style.outlineStyle = "solid";
+  itemInput.style.outlineWidth = "1px";
+  itemInput.style.outlineColor = "green";
+}
+
+function onBlur() {
+  console.log("input is not focused");
+  itemInput.style.outlineStyle = "none";
+}
+itemInput.addEventListener("input", onInput);
+priorityInput.addEventListener("change", onInput);
+checkBox.addEventListener("input", onChecked);
+itemInput.addEventListener("focus", onFocus);
+itemInput.addEventListener("blur", onBlur);
